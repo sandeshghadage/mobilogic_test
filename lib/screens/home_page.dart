@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mobilogic_test/screens/grid_screen.dart';
 import '../models/grid_model.dart';
-import 'grid_screen.dart';
+
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -37,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
+                    color: Colors.teal.withOpacity(0.6),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   margin: const EdgeInsets.symmetric(vertical: 5),
@@ -51,22 +53,23 @@ class _HomeScreenState extends State<HomeScreen> {
                           'Enter Rows',
                           style: TextStyle(
                             fontSize: 12,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                         TextField(
                           onChanged: (value) => _validator(),
                           controller: _rowsController,
+                          keyboardType: TextInputType.number,
                           //scrollPadding: EdgeInsets.only(bottom:100.0),
                           decoration: const InputDecoration(
                             isDense: true,
                             border: InputBorder.none,
                           ),
-                          cursorColor: Colors.white,
+                          cursorColor: Colors.black,
                           style: const TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ],
@@ -75,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
+                    color: Colors.teal.withOpacity(0.6),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   margin: const EdgeInsets.symmetric(vertical: 5),
@@ -89,22 +92,23 @@ class _HomeScreenState extends State<HomeScreen> {
                           'Enter Columns',
                           style: TextStyle(
                             fontSize: 12,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                         TextField(
                           onChanged: (value) => _validator(),
                           controller: _columnController,
+                          keyboardType: TextInputType.number,
                           //scrollPadding: EdgeInsets.only(bottom:100.0),
                           decoration: const InputDecoration(
                             isDense: true,
                             border: InputBorder.none,
                           ),
-                          cursorColor: Colors.white,
+                          cursorColor: Colors.black,
                           style: const TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ],
@@ -114,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 GestureDetector(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.5),
+                      color: Colors.teal.withOpacity(0.6),
                       borderRadius: BorderRadius.circular(5),
                     ),
                     margin: const EdgeInsets.symmetric(vertical: 5),
@@ -128,22 +132,23 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Enter Alphabets',
                             style: TextStyle(
                               fontSize: 12,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
                           TextField(
                             onChanged: (value) => _validator(),
                             controller: _alphaController,
+                            keyboardType: TextInputType.text,
                             //scrollPadding: EdgeInsets.only(bottom:100.0),
                             decoration: const InputDecoration(
                               isDense: true,
                               border: InputBorder.none,
                             ),
-                            cursorColor: Colors.white,
+                            cursorColor: Colors.black,
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                                color: Colors.black,
                             ),
                           ),
                         ],
@@ -176,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       }
                     },
                     child: const Text(
-                      'Create Grid',
+                      'Create Grid',style: TextStyle(color: Colors.black),
                     ),
                   ),
                 ),

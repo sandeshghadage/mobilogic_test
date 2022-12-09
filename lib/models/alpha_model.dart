@@ -1,8 +1,8 @@
-class AlphabetModel {
+class AlphaModel {
   String char;
   bool isSelected;
 
-  AlphabetModel({
+  AlphaModel({
     required this.char,
     required this.isSelected,
   });
